@@ -1,0 +1,1514 @@
+-- Create table
+create table TEST_XXX
+(
+  POLICYKEY   INTEGER not null,
+  POLICYNO    VARCHAR2(10),
+  MAINRISK    VARCHAR2(4),
+  HOISSDTE    DATE,
+  PREM        NUMBER(17,2),
+  STATCODE    VARCHAR2(2),
+  CHDRCHANNEL VARCHAR2(2),
+  AGENTCODE   VARCHAR2(10),
+  LOAD_DATE   DATE
+);
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835349, '30000861', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 300000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835350, '30000862', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 300000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835354, '30000866', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835357, '30000869', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835359, '30000871', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835369, '30000881', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835380, '30000892', 'PD02', to_date('26-04-2004', 'dd-mm-yyyy'), 99635.00, 'SU', 'KA', '80301043', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835383, '30000895', 'PE11', to_date('26-04-2004', 'dd-mm-yyyy'), 1567.00, 'IF', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835397, '30000909', 'PD19', to_date('26-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835400, '30000912', 'PD19', to_date('26-04-2004', 'dd-mm-yyyy'), 100000.00, 'DT', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835403, '30000915', 'PD19', to_date('26-04-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835408, '30000920', 'PD19', to_date('26-04-2004', 'dd-mm-yyyy'), 36000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835410, '30000922', 'PE11', to_date('26-04-2004', 'dd-mm-yyyy'), 1548.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835413, '30000925', 'PE21', to_date('23-04-2004', 'dd-mm-yyyy'), 11850.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835416, '30000928', 'PE13', to_date('26-04-2004', 'dd-mm-yyyy'), 944.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835423, '30000935', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835427, '30000939', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835433, '30000945', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835436, '30000948', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835437, '30000949', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835439, '30000951', 'NM02', to_date('26-04-2004', 'dd-mm-yyyy'), 468.00, 'LA', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835443, '30000955', 'PD02', to_date('29-04-2004', 'dd-mm-yyyy'), 18248.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835444, '30000956', 'NI21', to_date('26-04-2004', 'dd-mm-yyyy'), 1041.00, 'TL', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835446, '30000958', 'PD19', to_date('27-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835447, '30000959', 'NI21', to_date('26-04-2004', 'dd-mm-yyyy'), 849.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835450, '30000962', 'NM01', to_date('28-04-2004', 'dd-mm-yyyy'), 229.00, 'TL', 'KA', '80300189', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835454, '30000966', 'NI21', to_date('28-04-2004', 'dd-mm-yyyy'), 545.00, 'EX', 'KA', '80300215', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835460, '30000972', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835473, '30000985', 'NI21', to_date('10-05-2004', 'dd-mm-yyyy'), 665.00, 'EX', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835477, '30000989', 'NM02', to_date('27-04-2004', 'dd-mm-yyyy'), 298.00, 'TL', 'KA', '80300107', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835503, '30001015', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835511, '30001023', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835523, '30001035', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 60000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835526, '30001038', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835536, '30001048', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835538, '30001050', 'NM02', to_date('08-05-2004', 'dd-mm-yyyy'), 298.00, 'TL', 'KA', '80300177', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835541, '30001053', 'N/A', to_date('31-12-9999', 'dd-mm-yyyy'), 0.00, 'XC', 'BA', '70300089', to_date('16-01-2014 02:12:56', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835549, '30001061', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835553, '30001065', 'PD03', to_date('28-04-2004', 'dd-mm-yyyy'), 4720.00, 'TL', 'KA', '80300154', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835556, '30001068', 'NM02', to_date('29-04-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300337', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835564, '30001076', 'PD19', to_date('29-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835590, '30000502', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 5000.00, 'DT', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835594, '30000506', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 10000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835595, '30000507', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835600, '30000512', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835601, '30000513', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835602, '30000514', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 60000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835604, '30000516', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835608, '30000520', 'PD03', to_date('13-04-2004', 'dd-mm-yyyy'), 4904.00, 'IF', 'KA', '80306989', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835615, '30000527', 'PD19', to_date('13-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835629, '30000541', 'PD19', to_date('13-04-2004', 'dd-mm-yyyy'), 25000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835634, '30000546', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835651, '30000563', 'NM01', to_date('19-04-2004', 'dd-mm-yyyy'), 371.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834991, '30000277', 'NM01', to_date('01-04-2004', 'dd-mm-yyyy'), 334.00, 'TL', 'KA', '80300095', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834993, '30000279', 'NM01', to_date('01-04-2004', 'dd-mm-yyyy'), 398.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834996, '30000282', 'NI21', to_date('01-04-2004', 'dd-mm-yyyy'), 705.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834997, '30000283', 'NI21', to_date('01-04-2004', 'dd-mm-yyyy'), 611.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834998, '30000284', 'PD19', to_date('06-04-2004', 'dd-mm-yyyy'), 500000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835000, '30000286', 'PE11', to_date('26-03-2004', 'dd-mm-yyyy'), 2146.00, 'IF', 'KA', '13000101', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835002, '30000288', 'NM01', to_date('26-03-2004', 'dd-mm-yyyy'), 2300.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835022, '30000308', 'NM02', to_date('06-04-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835024, '30000310', 'PD19', to_date('06-04-2004', 'dd-mm-yyyy'), 4000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835025, '30000311', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835032, '30000318', 'PD19', to_date('06-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835037, '30000323', 'NM01', to_date('21-04-2004', 'dd-mm-yyyy'), 380.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835040, '30000326', 'NM01', to_date('22-04-2004', 'dd-mm-yyyy'), 380.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835048, '30000334', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835053, '30000339', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 35000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835057, '30000343', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835062, '30000348', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835070, '30000356', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835075, '30000361', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 9000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835078, '30000364', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 6000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835091, '30000377', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835096, '30000382', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 18000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835098, '30000384', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 8000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835101, '30000387', 'PD19', to_date('12-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835111, '30000397', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835118, '30000404', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835119, '30000405', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 106000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835121, '30000407', 'PD19', to_date('07-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835122, '30000408', 'PD19', to_date('08-04-2004', 'dd-mm-yyyy'), 35000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835123, '30000409', 'PD19', to_date('08-04-2004', 'dd-mm-yyyy'), 24000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835127, '30000413', 'PD19', to_date('08-04-2004', 'dd-mm-yyyy'), 200000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835129, '30000415', 'PD19', to_date('08-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835134, '30000420', 'PD19', to_date('08-04-2004', 'dd-mm-yyyy'), 35000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835138, '30000424', 'NI23', to_date('07-04-2004', 'dd-mm-yyyy'), 675.00, 'TL', 'KA', '80300087', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835139, '30000425', 'NM01', to_date('07-04-2004', 'dd-mm-yyyy'), 302.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835142, '30000428', 'NM01', to_date('07-04-2004', 'dd-mm-yyyy'), 690.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835143, '30000429', 'NM02', to_date('07-04-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300087', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835151, '30000437', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835152, '30000438', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835158, '30000444', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835165, '30000452', 'PD19', to_date('09-04-2004', 'dd-mm-yyyy'), 35000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835170, '30000457', 'PD03', to_date('07-04-2004', 'dd-mm-yyyy'), 1715.00, 'SU', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835201, '30000108', 'NM01', to_date('01-03-2004', 'dd-mm-yyyy'), 334.00, 'TL', 'KA', '80300069', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835203, '30000110', 'NM02', to_date('03-03-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300054', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835206, '30000113', 'NM02', to_date('03-03-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300060', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835209, '30000116', 'NM02', to_date('05-03-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300060', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835269, '30000180', 'NM01', to_date('26-03-2004', 'dd-mm-yyyy'), 648.00, 'TL', 'KA', '80300052', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836484, '30002000', 'PD19', to_date('03-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836486, '30002002', 'PD19', to_date('03-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836490, '30002006', 'PD03', to_date('22-06-2004', 'dd-mm-yyyy'), 23316.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836500, '30002016', 'NM01', to_date('11-06-2004', 'dd-mm-yyyy'), 1008.00, 'TL', 'KA', '80300100', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836503, '30002019', 'NM01', to_date('11-06-2004', 'dd-mm-yyyy'), 1308.00, 'TL', 'KA', '80300100', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836504, '30002020', 'NM01', to_date('02-06-2004', 'dd-mm-yyyy'), 532.00, 'TL', 'KA', '80300054', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836505, '30002021', 'NM02', to_date('23-06-2004', 'dd-mm-yyyy'), 198.00, 'LA', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836507, '30002023', 'PD19', to_date('08-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835272, '30000183', 'NM01', to_date('24-03-2004', 'dd-mm-yyyy'), 445.00, 'TL', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835274, '30000185', 'NM01', to_date('22-03-2004', 'dd-mm-yyyy'), 230.00, 'TL', 'KA', '80300096', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835275, '30000186', 'NM01', to_date('22-03-2004', 'dd-mm-yyyy'), 230.00, 'TL', 'KA', '80300096', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835276, '30000187', 'NM01', to_date('22-03-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300069', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835279, '30000190', 'NM01', to_date('30-03-2004', 'dd-mm-yyyy'), 579.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835288, '30000199', 'NM02', to_date('22-03-2004', 'dd-mm-yyyy'), 298.00, 'TL', 'KA', '80300100', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835290, '30000201', 'NI21', to_date('22-03-2004', 'dd-mm-yyyy'), 1365.00, 'EX', 'KA', '80300087', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835292, '30000203', 'NM01', to_date('22-03-2004', 'dd-mm-yyyy'), 203.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835294, '30000205', 'PE13', to_date('23-03-2004', 'dd-mm-yyyy'), 2215.00, 'IF', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835297, '30000208', 'PE11', to_date('23-03-2004', 'dd-mm-yyyy'), 2810.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835300, '30000211', 'NI21', to_date('23-03-2004', 'dd-mm-yyyy'), 810.00, 'TL', 'KA', '80300083', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835311, '30000222', 'NM01', to_date('23-03-2004', 'dd-mm-yyyy'), 207.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835316, '30000227', 'NM01', to_date('23-03-2004', 'dd-mm-yyyy'), 690.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835321, '30000232', 'NM01', to_date('25-03-2004', 'dd-mm-yyyy'), 293.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835329, '30000240', 'NM02', to_date('26-03-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300052', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835337, '30000248', 'NM01', to_date('26-03-2004', 'dd-mm-yyyy'), 527.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835339, '30000250', 'NM01', to_date('29-03-2004', 'dd-mm-yyyy'), 2323.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836346, '30001408', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 35000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836351, '30001413', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836353, '30001415', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 150000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836355, '30001417', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836358, '30001420', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836359, '30001421', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 95000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836368, '30001430', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836370, '30001432', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 17000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836384, '30001446', 'PD19', to_date('11-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836393, '30001455', 'PD19', to_date('11-05-2004', 'dd-mm-yyyy'), 7000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835483, '30000995', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 220000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835487, '30000999', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 205000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835488, '30001000', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835497, '30001009', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 23000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835501, '30001013', 'PD19', to_date('28-04-2004', 'dd-mm-yyyy'), 80000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836477, '30001993', 'PD19', to_date('03-06-2004', 'dd-mm-yyyy'), 3000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836478, '30001994', 'PD19', to_date('03-06-2004', 'dd-mm-yyyy'), 500000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837839, '30002759', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837846, '30002766', 'NM08', to_date('09-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300054', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837849, '30002769', 'NM08', to_date('09-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300215', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837852, '30002772', 'NM08', to_date('09-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837853, '30002773', 'NM08', to_date('09-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837855, '30002775', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300099', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837859, '30002779', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300069', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837860, '30002780', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837862, '30002782', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300233', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837865, '30002785', 'PD19', to_date('13-07-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837866, '30002786', 'NI21', to_date('12-07-2004', 'dd-mm-yyyy'), 805.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837868, '30002788', 'PD19', to_date('13-07-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837873, '30002793', 'PD19', to_date('13-07-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837880, '30002800', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837891, '30002811', 'NM08', to_date('12-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837899, '30002819', 'PD03', to_date('21-07-2004', 'dd-mm-yyyy'), 4000.00, 'IF', 'KA', '80300513', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837901, '30002821', 'NM01', to_date('22-07-2004', 'dd-mm-yyyy'), 214.00, 'TL', 'KA', '80300223', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837903, '30002823', 'PD03', to_date('26-07-2004', 'dd-mm-yyyy'), 4000.00, 'SU', 'KA', '80300513', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837911, '30002831', 'PD19', to_date('14-07-2004', 'dd-mm-yyyy'), 35000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837917, '30002837', 'PD19', to_date('14-07-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837919, '30002839', 'PD19', to_date('14-07-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837922, '30002842', 'PD19', to_date('14-07-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837934, '30002854', 'PD19', to_date('14-07-2004', 'dd-mm-yyyy'), 700000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837942, '30002862', 'NM01', to_date('13-07-2004', 'dd-mm-yyyy'), 222.00, 'TL', 'KA', '80300178', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837952, '30002872', 'NM01', to_date('16-07-2004', 'dd-mm-yyyy'), 235.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836510, '30002026', 'PD19', to_date('07-06-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836516, '30002032', 'PD19', to_date('07-06-2004', 'dd-mm-yyyy'), 500000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836521, '30002037', 'PD19', to_date('07-06-2004', 'dd-mm-yyyy'), 8000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836529, '30002045', 'NM01', to_date('03-06-2004', 'dd-mm-yyyy'), 601.00, 'SU', 'KA', '80300057', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836530, '30002046', 'NM01', to_date('03-06-2004', 'dd-mm-yyyy'), 601.00, 'SU', 'KA', '80300057', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836535, '30002051', 'PD19', to_date('07-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836544, '30002060', 'PD19', to_date('07-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836547, '30002063', 'PD03', to_date('07-06-2004', 'dd-mm-yyyy'), 3342.00, 'SU', 'KA', '80307908', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836552, '30002068', 'NM07', to_date('07-06-2004', 'dd-mm-yyyy'), 371.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836558, '30002074', 'PD19', to_date('08-06-2004', 'dd-mm-yyyy'), 4000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836572, '30002088', 'NM01', to_date('07-06-2004', 'dd-mm-yyyy'), 222.00, 'TL', 'KA', '80300074', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836575, '30002091', 'NM01', to_date('07-06-2004', 'dd-mm-yyyy'), 192.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836580, '30002096', 'PD03', to_date('09-06-2004', 'dd-mm-yyyy'), 3650.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836591, '30002107', 'NM07', to_date('08-06-2004', 'dd-mm-yyyy'), 474.00, 'TL', 'KA', '80300177', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836595, '30002111', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 70000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836600, '30002116', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836605, '30002121', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836610, '30002126', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 6000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836611, '30002127', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 5000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836618, '30002134', 'PD19', to_date('14-06-2004', 'dd-mm-yyyy'), 40000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836621, '30002137', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 17000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836626, '30002142', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836629, '30002145', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836634, '30002150', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836635, '30002151', 'PD19', to_date('09-06-2004', 'dd-mm-yyyy'), 150000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836641, '30002158', 'NM02', to_date('15-06-2004', 'dd-mm-yyyy'), 198.00, 'IF', 'KA', '80308890', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836643, '30002160', 'NI21', to_date('28-06-2004', 'dd-mm-yyyy'), 1442.00, 'EX', 'KA', '80300337', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836645, '30002162', 'NM02', to_date('09-06-2004', 'dd-mm-yyyy'), 298.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836649, '30002166', 'PD19', to_date('10-06-2004', 'dd-mm-yyyy'), 4000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836652, '30002169', 'PD19', to_date('10-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836654, '30002171', 'PD19', to_date('14-06-2004', 'dd-mm-yyyy'), 7000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836655, '30002172', 'PD19', to_date('10-06-2004', 'dd-mm-yyyy'), 98000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836660, '30002177', 'NM02', to_date('10-06-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836661, '30002178', 'PD03', to_date('10-06-2004', 'dd-mm-yyyy'), 4030.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836665, '30002182', 'PD19', to_date('11-06-2004', 'dd-mm-yyyy'), 8000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836668, '30002185', 'PD03', to_date('11-06-2004', 'dd-mm-yyyy'), 1272.00, 'IF', 'KA', '80301377', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836670, '30002187', 'PD03', to_date('11-06-2004', 'dd-mm-yyyy'), 45886.00, 'IF', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836680, '30002197', 'PD03', to_date('14-06-2004', 'dd-mm-yyyy'), 9384.00, 'IF', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836681, '30002198', 'NI22', to_date('14-06-2004', 'dd-mm-yyyy'), 730.00, 'EX', 'KA', '80300174', to_date('16-01-2014 02:12:56', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836709, '30001625', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836711, '30001627', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836723, '30001639', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 29000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836726, '30001642', 'NM01', to_date('19-05-2004', 'dd-mm-yyyy'), 1343.00, 'TL', 'KA', '80300069', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836731, '30001647', 'PD19', to_date('20-05-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836734, '30001650', 'PD19', to_date('20-05-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836739, '30001655', 'PD19', to_date('20-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836747, '30001663', 'PD19', to_date('20-05-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836749, '30001665', 'NM02', to_date('27-05-2004', 'dd-mm-yyyy'), 468.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836764, '30001680', 'PD19', to_date('21-05-2004', 'dd-mm-yyyy'), 25000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836772, '30001688', 'NM07', to_date('20-05-2004', 'dd-mm-yyyy'), 371.00, 'TL', 'KA', '80300082', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836779, '30001695', 'NM01', to_date('20-05-2004', 'dd-mm-yyyy'), 418.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836780, '30001696', 'PD01', to_date('24-05-2004', 'dd-mm-yyyy'), 2631.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836786, '30001702', 'PD19', to_date('24-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836788, '30001704', 'PD01', to_date('24-05-2004', 'dd-mm-yyyy'), 1794.00, 'LA', 'KA', '80305574', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836794, '30001710', 'PD03', to_date('02-06-2004', 'dd-mm-yyyy'), 4908.00, 'SU', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836798, '30001714', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 80000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836800, '30001716', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836803, '30001719', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836804, '30001720', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836806, '30001722', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836807, '30001723', 'PD19', to_date('25-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836809, '30001725', 'PD19', to_date('24-05-2004', 'dd-mm-yyyy'), 3000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836812, '30001728', 'NM01', to_date('26-05-2004', 'dd-mm-yyyy'), 188.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836813, '30001729', 'NM01', to_date('26-05-2004', 'dd-mm-yyyy'), 188.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836831, '30001747', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 52000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836836, '30001752', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836839, '30001755', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 117000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836855, '30001771', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836859, '30001775', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 3000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836860, '30001776', 'NM02', to_date('25-05-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836870, '30001786', 'PD19', to_date('26-05-2004', 'dd-mm-yyyy'), 8000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836882, '30001798', 'NM02', to_date('26-05-2004', 'dd-mm-yyyy'), 298.00, 'TL', 'KA', '80300087', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836887, '30001803', 'PD19', to_date('27-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836890, '30001806', 'PD19', to_date('27-05-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836898, '30001814', 'NM01', to_date('27-05-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836900, '30001816', 'NM01', to_date('31-05-2004', 'dd-mm-yyyy'), 188.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836910, '30001826', 'NM01', to_date('27-05-2004', 'dd-mm-yyyy'), 225.00, 'TL', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836912, '30001828', 'NM01', to_date('28-05-2004', 'dd-mm-yyyy'), 302.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836920, '30001836', 'PD19', to_date('31-05-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836928, '30001844', 'PD03', to_date('28-05-2004', 'dd-mm-yyyy'), 2820.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836931, '30001847', 'PD03', to_date('31-05-2004', 'dd-mm-yyyy'), 2225.00, 'SU', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835725, '30000637', 'NM01', to_date('13-04-2004', 'dd-mm-yyyy'), 188.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835732, '30000644', 'NM01', to_date('14-04-2004', 'dd-mm-yyyy'), 564.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835736, '30000648', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835739, '30000651', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835742, '30000654', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 8000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835745, '30000657', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835749, '30000661', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835750, '30000662', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835752, '30000664', 'PD19', to_date('15-04-2004', 'dd-mm-yyyy'), 40000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835754, '30000666', 'NM01', to_date('26-03-2004', 'dd-mm-yyyy'), 1078.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835755, '30000667', 'NM01', to_date('16-04-2004', 'dd-mm-yyyy'), 1042.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835764, '30000676', 'PD19', to_date('16-04-2004', 'dd-mm-yyyy'), 116000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835766, '30000678', 'PD19', to_date('16-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835774, '30000686', 'PD19', to_date('16-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835785, '30000697', 'PD19', to_date('16-04-2004', 'dd-mm-yyyy'), 11000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835792, '30000704', 'PD19', to_date('19-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835797, '30000709', 'PE11', to_date('19-04-2004', 'dd-mm-yyyy'), 6843.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835802, '30000714', 'NM01', to_date('19-04-2004', 'dd-mm-yyyy'), 334.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835808, '30000720', 'PD19', to_date('20-04-2004', 'dd-mm-yyyy'), 18000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835813, '30000725', 'PD19', to_date('20-04-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835823, '30000735', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835833, '30000745', 'PD19', to_date('30-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835840, '30000752', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835851, '30000763', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 200000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835853, '30000765', 'PD01', to_date('21-04-2004', 'dd-mm-yyyy'), 1621.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835860, '30000772', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 150000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835864, '30000776', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 120000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835873, '30000785', 'NM01', to_date('23-04-2004', 'dd-mm-yyyy'), 544.00, 'TL', 'KA', '80300340', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835874, '30000786', 'NM02', to_date('20-04-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300476', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835876, '30000788', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835878, '30000790', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835883, '30000795', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835886, '30000798', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835890, '30000802', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835892, '30000804', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835897, '30000809', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 3000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835898, '30000810', 'PD19', to_date('21-04-2004', 'dd-mm-yyyy'), 60000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835900, '30000812', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835903, '30000815', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835905, '30000817', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835906, '30000818', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835910, '30000822', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 50000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835913, '30000825', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 50000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835923, '30000835', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835931, '30000843', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835940, '30000852', 'PD19', to_date('23-04-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835956, '30001543', 'NM01', to_date('17-05-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835958, '30001545', 'NM01', to_date('17-05-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835963, '30001550', 'PD01', to_date('18-05-2004', 'dd-mm-yyyy'), 2490.00, 'TL', 'KA', '80300189', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835968, '30001555', 'PD19', to_date('18-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835984, '30001571', 'PD03', to_date('18-05-2004', 'dd-mm-yyyy'), 3800.00, 'SU', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835987, '30001574', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 200000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835994, '30001581', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 17000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835997, '30001584', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 10000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836011, '30001598', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 60000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835218, '30000125', 'NI22', to_date('11-03-2004', 'dd-mm-yyyy'), 392.00, 'LA', 'KA', '80300060', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835219, '30000126', 'NM01', to_date('11-03-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300054', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835226, '30000133', 'NM01', to_date('15-03-2004', 'dd-mm-yyyy'), 230.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835231, '30000138', 'NI22', to_date('25-03-2004', 'dd-mm-yyyy'), 941.00, 'EX', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835236, '30000146', 'NM01', to_date('16-03-2004', 'dd-mm-yyyy'), 1005.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835246, '30000157', 'NM01', to_date('16-03-2004', 'dd-mm-yyyy'), 290.00, 'TL', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835256, '30000167', 'PD03', to_date('25-03-2004', 'dd-mm-yyyy'), 4368.00, 'TL', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835260, '30000171', 'NI21', to_date('18-03-2004', 'dd-mm-yyyy'), 810.00, 'TL', 'KA', '80300083', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835265, '30000176', 'PE11', to_date('19-03-2004', 'dd-mm-yyyy'), 2641.00, 'SU', 'KA', '80300809', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835267, '30000178', 'NM01', to_date('23-03-2004', 'dd-mm-yyyy'), 1026.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836281, '30001343', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18292.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836288, '30001350', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18258.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836289, '30001351', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18258.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836291, '30001353', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13689.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836296, '30001358', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18250.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836303, '30001365', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18286.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836306, '30001368', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18268.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836308, '30001370', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 18262.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836314, '30001376', 'PD01', to_date('28-05-2004', 'dd-mm-yyyy'), 5785.00, 'IF', 'KA', '13000106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836317, '30001379', 'NM02', to_date('12-05-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300476', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836326, '30001388', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 10000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836327, '30001389', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836329, '30001391', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 60000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836331, '30001393', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836333, '30001395', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836339, '30001401', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 30000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836342, '30001404', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836344, '30001406', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 28000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (967293101, '00322588', 'SC06', to_date('03-12-2013', 'dd-mm-yyyy'), 25000.00, 'CF', 'BA', '70100001', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836012, '30001599', 'PD19', to_date('19-05-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836024, '30001086', 'PD19', to_date('09-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836037, '30001099', 'NM01', to_date('28-04-2004', 'dd-mm-yyyy'), 382.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836042, '30001104', 'PD03', to_date('30-04-2004', 'dd-mm-yyyy'), 3690.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835652, '30000564', 'NM01', to_date('19-04-2004', 'dd-mm-yyyy'), 404.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835654, '30000566', 'PD03', to_date('14-04-2004', 'dd-mm-yyyy'), 1689.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835661, '30000573', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835667, '30000579', 'NM01', to_date('13-04-2004', 'dd-mm-yyyy'), 235.00, 'TL', 'KA', '80300077', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835679, '30000591', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835690, '30000602', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835692, '30000604', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835699, '30000611', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835704, '30000616', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835705, '30000617', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 100000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835715, '30000627', 'PD19', to_date('14-04-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835720, '30000632', 'NM01', to_date('13-04-2004', 'dd-mm-yyyy'), 230.00, 'TL', 'KA', '80300124', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7835723, '30000635', 'NM01', to_date('13-04-2004', 'dd-mm-yyyy'), 920.00, 'TL', 'KA', '80300164', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834970, '30000256', 'NM01', to_date('29-03-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834973, '30000259', 'PD03', to_date('31-03-2004', 'dd-mm-yyyy'), 1542.00, 'SU', 'KA', '80300097', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834974, '30000260', 'PD03', to_date('29-03-2004', 'dd-mm-yyyy'), 3680.00, 'IF', 'KA', '13000101', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834977, '30000263', 'NM02', to_date('31-03-2004', 'dd-mm-yyyy'), 198.00, 'SU', 'KA', '80307735', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834985, '30000271', 'NM01', to_date('01-04-2004', 'dd-mm-yyyy'), 225.00, 'LA', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7834990, '30000276', 'NM01', to_date('01-04-2004', 'dd-mm-yyyy'), 750.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838819, '30004344', 'PD03', to_date('31-08-2004', 'dd-mm-yyyy'), 3456.00, 'IF', 'KA', '13000101', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838822, '30004347', 'NM08', to_date('27-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838825, '30004350', 'NM08', to_date('31-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300222', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838837, '30004362', 'NM08', to_date('31-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300105', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838840, '30004365', 'NM08', to_date('27-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300154', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838842, '30004367', 'NM08', to_date('31-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300215', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838845, '30004370', 'PD01', to_date('01-09-2004', 'dd-mm-yyyy'), 4536.00, 'SU', 'KA', '80300519', to_date('16-01-2014 02:12:56', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838848, '30004373', 'PE25', to_date('30-08-2004', 'dd-mm-yyyy'), 4572.00, 'SU', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838861, '30004386', 'PD19', to_date('31-08-2004', 'dd-mm-yyyy'), 40000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838870, '30004395', 'PD02', to_date('31-08-2004', 'dd-mm-yyyy'), 41557.00, 'IF', 'KA', '80300212', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838871, '30004396', 'PD03', to_date('30-08-2004', 'dd-mm-yyyy'), 4585.00, 'IF', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838875, '30004400', 'PD03', to_date('30-08-2004', 'dd-mm-yyyy'), 4815.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838884, '30004409', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838893, '30004418', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838894, '30004419', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838896, '30004421', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838899, '30004424', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300151', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838903, '30004428', 'NM08', to_date('30-08-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838909, '30004434', 'PD03', to_date('30-08-2004', 'dd-mm-yyyy'), 2388.00, 'TL', 'KA', '80300215', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7838910, '30004435', 'NM01', to_date('28-09-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837701, '30003223', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 180000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837704, '30003226', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837705, '30003227', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837706, '30003228', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837710, '30003232', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837713, '30003235', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 50000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837714, '30003236', 'PD19', to_date('21-07-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837715, '30003237', 'NM08', to_date('20-07-2004', 'dd-mm-yyyy'), 100.00, 'TL', 'KA', '80300105', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836119, '30001181', 'PD19', to_date('09-05-2004', 'dd-mm-yyyy'), 190000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836120, '30001182', 'PD19', to_date('09-05-2004', 'dd-mm-yyyy'), 25000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836127, '30001189', 'PD19', to_date('09-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836142, '30001204', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 27693.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836145, '30001207', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 27474.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836148, '30001210', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 23110.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836153, '30001215', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 150000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836155, '30001217', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 22000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836162, '30001224', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 300000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836166, '30001228', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 200000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836170, '30001232', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836175, '30001237', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836178, '30001240', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836181, '30001243', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 46000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836191, '30001253', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 38000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836192, '30001254', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836194, '30001256', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 4000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836199, '30001261', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 14000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836207, '30001269', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13694.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836208, '30001270', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13707.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836219, '30001281', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13694.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836228, '30001290', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 200000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836232, '30001294', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 7000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836233, '30001295', 'PD19', to_date('10-05-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836240, '30001302', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 22828.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836242, '30001304', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 22818.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836248, '30001310', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 22920.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836250, '30001312', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 22950.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836258, '30001320', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13697.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836261, '30001323', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13697.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836266, '30001328', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13737.00, 'SU', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836270, '30001332', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13694.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836273, '30001335', 'PD02', to_date('10-05-2004', 'dd-mm-yyyy'), 13691.00, 'IF', 'KA', '80300106', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837227, '30002294', 'NM01', to_date('18-06-2004', 'dd-mm-yyyy'), 460.00, 'TL', 'KA', '80300074', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837230, '30002297', 'PD19', to_date('21-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837235, '30002302', 'PD19', to_date('21-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837239, '30002306', 'N/A', to_date('31-12-9999', 'dd-mm-yyyy'), 0.00, 'XC', 'KA', '80300087', to_date('16-01-2014 02:12:56', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837245, '30002312', 'PD19', to_date('22-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837248, '30002315', 'PD19', to_date('22-06-2004', 'dd-mm-yyyy'), 7000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837251, '30002318', 'PD19', to_date('22-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837253, '30002320', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837256, '30002323', 'NM07', to_date('22-06-2004', 'dd-mm-yyyy'), 890.00, 'SU', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837259, '30002326', 'NM01', to_date('21-06-2004', 'dd-mm-yyyy'), 251.00, 'TL', 'KA', '80300494', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837260, '30002327', 'PD03', to_date('21-06-2004', 'dd-mm-yyyy'), 2780.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837261, '30002328', 'NM01', to_date('22-06-2004', 'dd-mm-yyyy'), 334.00, 'TL', 'KA', '80300178', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837264, '30002331', 'NM01', to_date('22-06-2004', 'dd-mm-yyyy'), 222.00, 'TL', 'KA', '80300157', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837267, '30002334', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 24000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837274, '30002341', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 11000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837276, '30002343', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837289, '30002356', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837297, '30002364', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 13000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837305, '30002372', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837309, '30002376', 'PD03', to_date('08-07-2004', 'dd-mm-yyyy'), 9150.00, 'SU', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837313, '30002380', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837318, '30002385', 'PD19', to_date('23-06-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837323, '30002390', 'NM01', to_date('24-06-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300535', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837345, '30002412', 'NM01', to_date('23-06-2004', 'dd-mm-yyyy'), 300.00, 'TL', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837350, '30002417', 'NM01', to_date('23-06-2004', 'dd-mm-yyyy'), 300.00, 'SU', 'KA', '80300067', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837351, '30002418', 'PD19', to_date('25-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837353, '30002420', 'PD19', to_date('25-06-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837361, '30002428', 'PD03', to_date('05-07-2004', 'dd-mm-yyyy'), 2580.00, 'IF', 'KA', '13000102', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837363, '30002430', 'PD19', to_date('28-06-2004', 'dd-mm-yyyy'), 26000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837370, '30002437', 'PD19', to_date('28-06-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837376, '30002443', 'PE13', to_date('28-06-2004', 'dd-mm-yyyy'), 1887.00, 'IF', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837379, '30002446', 'NM01', to_date('07-07-2004', 'dd-mm-yyyy'), 1056.00, 'TL', 'KA', '80300569', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837389, '30002456', 'PD19', to_date('29-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837390, '30002457', 'PD19', to_date('29-06-2004', 'dd-mm-yyyy'), 4000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837398, '30002465', 'NM01', to_date('29-06-2004', 'dd-mm-yyyy'), 334.00, 'TL', 'KA', '80300204', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837399, '30002466', 'PE21', to_date('29-06-2004', 'dd-mm-yyyy'), 6965.00, 'SU', 'KA', '80300535', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837404, '30002471', 'NM01', to_date('30-06-2004', 'dd-mm-yyyy'), 1052.00, 'TL', 'KA', '80300174', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837406, '30002473', 'PE21', to_date('07-07-2004', 'dd-mm-yyyy'), 3942.00, 'SU', 'KA', '80300079', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837409, '30002478', 'NM01', to_date('29-06-2004', 'dd-mm-yyyy'), 252.00, 'TL', 'KA', '80300154', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837410, '30002479', 'NM01', to_date('29-06-2004', 'dd-mm-yyyy'), 252.00, 'TL', 'KA', '80300154', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837411, '30002480', 'NM01', to_date('29-06-2004', 'dd-mm-yyyy'), 252.00, 'TL', 'KA', '80300154', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837417, '30002486', 'PD03', to_date('30-06-2004', 'dd-mm-yyyy'), 5310.00, 'IF', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837427, '30002496', 'PD19', to_date('30-06-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837435, '30002504', 'PD19', to_date('30-06-2004', 'dd-mm-yyyy'), 5000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837438, '30002507', 'PD19', to_date('30-06-2004', 'dd-mm-yyyy'), 28000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837446, '30002515', 'PD19', to_date('30-06-2004', 'dd-mm-yyyy'), 30000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837450, '30002519', 'PD19', to_date('30-06-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837459, '30002528', 'PD19', to_date('02-07-2004', 'dd-mm-yyyy'), 11000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837463, '30002532', 'PD19', to_date('05-07-2004', 'dd-mm-yyyy'), 11000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837473, '30002542', 'NM02', to_date('02-07-2004', 'dd-mm-yyyy'), 198.00, 'TL', 'KA', '80300174', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837474, '30002543', 'NM07', to_date('02-07-2004', 'dd-mm-yyyy'), 1163.00, 'TL', 'KA', '80300174', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837479, '30002548', 'NM07', to_date('02-07-2004', 'dd-mm-yyyy'), 1163.00, 'TL', 'KA', '80300076', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837484, '30002553', 'NI21', to_date('02-07-2004', 'dd-mm-yyyy'), 703.00, 'TL', 'KA', '80300030', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837486, '30002555', 'NI21', to_date('06-07-2004', 'dd-mm-yyyy'), 453.00, 'EX', 'KA', '80300197', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837491, '30002560', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837501, '30002570', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 60000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837502, '30002571', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 32000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837504, '30002573', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (967293098, '00322585', 'ND32', to_date('31-12-9999', 'dd-mm-yyyy'), 1550.00, 'UC', 'GA', '30100077', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837506, '30002575', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 45000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837516, '30002585', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837522, '30002591', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837532, '30002601', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 50000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837541, '30002610', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 13000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837547, '30002616', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 100000.00, 'SU', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837548, '30002617', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837551, '30002620', 'PD19', to_date('07-07-2004', 'dd-mm-yyyy'), 64000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837557, '30002626', 'NM01', to_date('06-07-2004', 'dd-mm-yyyy'), 460.00, 'TL', 'KA', '80300215', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7837560, '30002629', 'NI21', to_date('06-07-2004', 'dd-mm-yyyy'), 638.00, 'TL', 'KA', '80300088', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836401, '30001463', 'PD19', to_date('12-05-2004', 'dd-mm-yyyy'), 8000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836404, '30001466', 'PD19', to_date('12-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836407, '30001469', 'PD19', to_date('12-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836409, '30001471', 'PD19', to_date('12-05-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836412, '30001474', 'PD19', to_date('12-05-2004', 'dd-mm-yyyy'), 10000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836417, '30001479', 'NI21', to_date('18-05-2004', 'dd-mm-yyyy'), 1124.00, 'TL', 'KA', '80300082', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836431, '30001493', 'PD19', to_date('13-05-2004', 'dd-mm-yyyy'), 6000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836434, '30001496', 'PD19', to_date('13-05-2004', 'dd-mm-yyyy'), 15000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836445, '30001507', 'NM07', to_date('12-05-2004', 'dd-mm-yyyy'), 371.00, 'TL', 'KA', '80300174', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836450, '30001512', 'PD19', to_date('14-05-2004', 'dd-mm-yyyy'), 379000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836455, '30001517', 'PD19', to_date('14-05-2004', 'dd-mm-yyyy'), 30000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836045, '30001107', 'PD19', to_date('30-04-2004', 'dd-mm-yyyy'), 20000.00, 'MA', 'BA', '70300089', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (967293099, '00322586', 'PE52', to_date('03-12-2013', 'dd-mm-yyyy'), 5000.00, 'IF', 'BA', '70100459', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836048, '30001110', 'NM01', to_date('29-04-2004', 'dd-mm-yyyy'), 203.00, 'TL', 'KA', '80300112', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into d_policy (POLICYKEY, POLICYNO, MAINRISK, HOISSDTE, PREM, STATCODE, CHDRCHANNEL, AGENTCODE, LOAD_DATE)
+values (7836050, '30001112', 'NM02', to_date('10-05-2004', 'dd-mm-yyyy'), 333.00, 'LA', 'KA', '80300105', to_date('14-01-2014 16:31:32', 'dd-mm-yyyy hh24:mi:ss'));
+
