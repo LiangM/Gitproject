@@ -10,7 +10,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "POLICY")
-public class Policy {
+public class DBPolicy {
 
 	private int policykey;
 	private String policyno;
@@ -22,7 +22,7 @@ public class Policy {
 	private String agentcode;
 	private Date loaddate;   
 	
-	public Policy() {
+	public DBPolicy() {
 	}
 
 	@Id

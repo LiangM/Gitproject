@@ -1,6 +1,5 @@
 package com.SpringMVC.common.controller;
 
-//import java.util.ArrayList;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
@@ -8,7 +7,6 @@ import java.util.Iterator;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -19,22 +17,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.SpringMVC.common.DAO.D_riskcode;
+import com.SpringMVC.common.DAO.DBPolicy;
 import com.SpringMVC.common.DAO.Test_hiber;
-import com.SpringMVC.common.Validator.FormValidator;
 import com.SpringMVC.common.service.Car;
-import com.SpringMVC.common.service.Riskcode;
+import com.SpringMVC.common.service.Policy;
 import com.SpringMVC.common.service.Testhiber;
 import com.SpringMVC.util.HibernateUtil;
 
 @Controller
 public class HelloController {
-	FormValidator formValidator;
-
-	@Autowired
-	public HelloController(FormValidator formValidator) {
-		this.formValidator = formValidator;
-	}
 
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)
 	public ModelAndView TestInsert(ModelMap model) {
@@ -43,27 +34,24 @@ public class HelloController {
 	}
 
 	@RequestMapping(value = "/insert", method = RequestMethod.POST)
-	 public String FormOnSubmit(@ModelAttribute Testhiber testhiber, Model model,BindingResult result, SessionStatus status) {
-        model.addAttribute("testhiber", testhiber);
-        formValidator.validate(testhiber, result);
-        
-		if (result.hasErrors()) {
-			return "TestInsert";
-		} else {
-        Session session = HibernateUtil.getSessionFactory().openSession();
+	public String FormOnSubmit(@ModelAttribute Testhiber testhiber,
+			Model model, BindingResult result, SessionStatus status) {
+		model.addAttribute("testhiber", testhiber);
+
+		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		Test_hiber test_hiber = new Test_hiber();
- 
+
 		test_hiber.setTimekey(testhiber.getId());
 		test_hiber.setValue(testhiber.getValue());
 		test_hiber.setLoad_date(new Date());
- 
+
 		session.save(test_hiber);
 		session.getTransaction().commit();
-        
-        return "result";
-		}
-    }
+
+		return "result";
+
+	}
 
 	@RequestMapping("/welcome")
 	public ModelAndView printWelcome(ModelMap model) {
@@ -82,30 +70,32 @@ public class HelloController {
 	}
 
 	@SuppressWarnings("rawtypes")
-	@RequestMapping(value="/hiber",method = RequestMethod.GET)
+	@RequestMapping(value = "/hiber", method = RequestMethod.GET)
 	public ModelAndView hiberGet(ModelMap model) {
-		ArrayList rlist = new ArrayList();	 
-		ModelAndView model_view = new ModelAndView("D_riskcode", "risks", rlist);
+		ArrayList rlist = new ArrayList();
+		ModelAndView model_view = new ModelAndView("PolicyList", "risks", rlist);
 		return model_view;
 	}
-	
+
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	@RequestMapping(value="/hiber",method = RequestMethod.POST)
+	@RequestMapping(value = "/hiber", method = RequestMethod.POST)
 	public ModelAndView hiber(ModelMap model) {
 		ArrayList rlist = new ArrayList();
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
 		try {
 			tx = session.beginTransaction();
-			ArrayList risklist = (ArrayList) session.createQuery(
-					"FROM D_riskcode").list();
+			ArrayList risklist = (ArrayList) session.createQuery("FROM DBPolicy")
+					.list();
 
 			for (Iterator iterator = ((java.util.List) risklist).iterator(); iterator
 					.hasNext();) {
-				D_riskcode d_riskcode = (D_riskcode) iterator.next();
-				Riskcode r = new Riskcode(d_riskcode.getRiskkey(),
-						d_riskcode.getRiskcode(), d_riskcode.getRiskname(),
-						d_riskcode.getLoaddate());
+				DBPolicy d_riskcode = (DBPolicy) iterator.next();
+				Policy r = new Policy();
+				r.setPolicykey(d_riskcode.getPolicykey());
+				r.setPolicyno(d_riskcode.getPolicyno());
+				r.setMainrisk(d_riskcode.getMainrisk());
+				r.setLoaddate(d_riskcode.getLoaddate());
 				// System.out.println(d_riskcode.getRiskcode()+" "+d_riskcode.getRiskname());
 				rlist.add(r);
 			}
@@ -119,8 +109,8 @@ public class HelloController {
 		} finally {
 			session.close();
 		}
-		 
-		ModelAndView model_view = new ModelAndView("D_riskcode", "risks", rlist);
+
+		ModelAndView model_view = new ModelAndView("PolicyList", "risks", rlist);
 		return model_view;
 	}
 }

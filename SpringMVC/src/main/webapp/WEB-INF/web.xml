@@ -27,7 +27,7 @@
 	</context-param>
 
 	<welcome-file-list>
-		<welcome-file>pages/test.jsp</welcome-file>
+		<welcome-file>pages/PolicyList.jsp</welcome-file>
 	</welcome-file-list>
 
 </web-app>

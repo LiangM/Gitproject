@@ -13,16 +13,16 @@
   <input type="submit" value="Submit" />
 </form>	<table border="1">
 		<tr>
-			<th>Riskkey</th>
-			<th>Riskcode</th>
-			<th>Riskname</th>
-			<th>Load_date</th>
+			<th>POLICYKEY</th>
+			<th>POLICYNO</th>
+			<th>MAINRISK</th>
+			<th>LOAD_DATE</th>
 		</tr>
 		<c:forEach items="${risks}" var="risk">
 			<tr>
-				<td>${risk.riskkey}</td>
-				<td>${risk.riskcode}</td>
-				<td>${risk.riskname}</td>
+				<td>${risk.policykey}</td>
+				<td>${risk.policyno}</td>
+				<td>${risk.mainrisk}</td>
 				<td>${risk.loaddate}</td>
 			<tr />
 		</c:forEach>

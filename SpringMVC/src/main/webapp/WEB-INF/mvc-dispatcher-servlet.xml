@@ -23,9 +23,6 @@
 		up static resources in the ${webappRoot}/resources/ directory -->
 	<mvc:resources mapping="/css/**" location="WEB-INF/css/" />
 
-
-	<bean class="com.SpringMVC.common.Validator.FormValidator" />
-
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
