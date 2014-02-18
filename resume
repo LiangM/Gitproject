@@ -1,0 +1,62 @@
+Knowledge on various ETL, Reporting, and Database development tools like Informatica, SQL Server, and Oracle with strong SQL coding skills.
+
+Summary
+	Trained on Micro strategy reporting tool.
+	Lead projects from initialization phase from capturing business requirements to final phases of testing
+	Served as mentor and reviewer to junior Specialists in all areas of data warehousing and ETL.
+	Ability to quickly adapt to changing priorities, requests, and environments.
+	Dedicated to maintain high quality standards.
+
+Job A
+	As a Data Stage ETL consultant having mainframe background, lead the design and development of Consumer Payment Management System in a Service Oriented Architecture approach.
+	Working closely with the business users to understand the requirements and converting them into project level technical capabilities.
+	Worked with business analysts to identify the appropriate data elements for required capabilities.
+	Working with System Analysts to identify the proper sources for required data elements and to determine the accuracy of the data.
+	Participating in the data modeling sessions to understand the data model and providing them inputs based on the existing data to make sure designed model is technically feasible.
+	Assisting the systems analysts in source data analysis and in creation of the functional specification documents.
+	Working with Project managers to divide the project into smaller modules and helping them in defining the time lines based on the development complexities.
+	Assigned the work to development team by creating the individual tasks and updating the status to the project managers.
+	Designed and developed Batch Control process to run the Data Stage sequences in batches for restart ability and recoverability.
+	Identifying the common functionality between the processes and created reusable code using shared containers and PL and SQL procedures.
+	Extracted the data from various sources like DB2, UDB, Flat files and COBOL files using Data Stage Parallel Extender and loaded into the ORACLE database.
+	Created the Data Stage parallel jobs and sequences for extracting and loading the data using various stages like DB2, Flat File, Data Set, RDBMS, Transformer, lookup, sorter, remove duplicate, Change Capture, joiner.etc.
+	Designed and developed the parallel jobs for slowly changing dimensions (SCD Type1, Type 2 and Type 3) and fact tables loading.
+	Derived the incremental extraction and load logic for each target table based on the source data.
+	Created UNIX shell scripts to execute the external programs through Data Stage.
+	Performed the performance and tuning at source, Target and Data Stage job levels using Indexes, Hints and Partitioning in DB2, ORACLE and Data Stage.
+	Creating the Technical Specification documents and conducting the walk through meetings with Systems Analysts.
+	Creating the migration documents and migrating the code to the production environment.
+	Analyzing the dependencies between the jobs and scheduling them accordingly using the Work Scheduler.
+	Investigating and fixing the bugs occurred in the production environment and providing the on-call support.
+	Key player in integrating the core mainframe payment processor along with Upstream and Downstream interfaces using Data Stage ETL solution.
+	Co-ordinate with the Data Stage Center of Excellence team in tuning the performance of the Data Stage jobs.
+	Facilitated the Production move ups of ETL components from Acceptance to Production environment.
+	Co-ordinate with the QA team in various testing phases by resolving the defects and ensuring smooth execution of the test plans.
+
+Job B
+	Technical PM ETL Tech Lead for onsite and offshore team of ETL Developers, ETL Analyst, Data modeler & DBA.
+	Partnered with business users in identifying, prioritizing & resolving numerous data issues, create ETL Project Plans, design and development of summary table for Cognos Cube for Analytics.
+	Designed a highly parallel load of 100+ million records of historical data and did performance tuning on Oracle as well Ab Initio to bring down load times from over 16 hours to 6 hours.
+	Designed, developed & tested the fact table partition strategy to minimize performance impact due to additional history data in the fact tables.
+	Design, development & testing of all Oracle PL and SQL stored procedures to improve performance Designed the deployment plan to rollout the data warehouse to production.
+
+
+Job C
+Involved in support for the existing EDW (Enterprise Data ware house).
+•  Monitoring and resolving Data warehouse ETL Production issues.
+•  Worked in analyzing the issue, trace the problem area, suggest a solution, discuss with business.
+•  Implement the solution with extensive documentation.
+•  Initiated extensive documentations for the Production Support process improvements.
+•  Created shell scripts in UNIX to automate batch jobs.
+•  Efficiency displayed Team-coordination and ensuring customer satisfaction by providing extensive support
+
+D
+	Wholly responsible for data modeling.
+	Developed the ETL mappings in PL and SQL via packages, procedures, functions, views and triggers.Scheduled the jobs through concurrent manager in Oracle E-business suite.
+	Responsible for testing, implementation and maintenance of the data-mart solution.
+	Solely responsible for the back-end of all of orders data-mart.
+	Served as a data architect and modeler, translating business requirements into complicated star and snowflake schema models for new product launches or mergers.
+	Technical Lead for a group of BI developers consisting of ETL and report developers.
+	Worked with the PM to present the overview, scope and before and after analysis of the project to the upper management and the steering committee.
+	Conducted requirement gathering sessions with the business users and generated the functional specs with a team of business analysts.
+.
