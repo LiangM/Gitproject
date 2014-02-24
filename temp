@@ -1,0 +1,30 @@
+Duty
+ETL Technical Lead in a group of BI developers consisting of ETL and report developers.
+Lead projects from initialization phase from capturing business requirements to final phases of testing
+Served as mentor and reviewer to junior Specialists in data warehousing and ETL.
+
+
+Designed and developed Batch Control process to run the Data Stage sequences in batches for restart ability and recoverability.
+Identifying the common functionality between the processes and created reusable code using shared containers and PL and SQL procedures.
+----------------------------------
+Extracted the data from various sources like MS SQL server, DB2, Oracle and Flat files and loaded into the ORACLE database.
+Created the Mappings for extracting and loading the data using various transformations like Sorter, Ranker, Joiner, Lookup, Normalizer, Java and SQL Transformation.etc.
+Designed and developed the Mappings and Database tables for slowly changing dimensions and fact tables loading.
+Derived the incremental extraction and load logic for target table based on the source data.
+Created batch command to start the ETL process or execute the external programs through Workflow Manager.
+Performed the performance tuning at Mapping, Session, Workflow and Database levels.
+Creating the Technical Specification documents.
+Administrate the migration from the development environment the production environment.
+--------------------------------------------------------------------
+Analyzing the dependencies between the jobs and scheduling them accordingly using the Work Scheduler.
+Investigating and fixing the bugs occurred in the production environment and providing the on-call support.
+Key player in integrating the core mainframe payment processor along with Upstream and Downstream interfaces using Data Stage ETL solution.
+Co-ordinate with the Data Stage Center of Excellence team in tuning the performance of the Data Stage jobs.
+Facilitated the Production move ups of ETL components from Acceptance to Production environment.
+
+
+Skill
+Designed a highly parallel load of 100+ million records of historical data and did performance tuning on Oracle as well Ab Initio to bring down load times from over 16 hours to 6 hours.
+
+Served as a data architect and modeler, translating business requirements into complicated star and snowflake schema models for new product launches or mergers.
+
