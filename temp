@@ -15,6 +15,10 @@ Created batch command to start the ETL process or execute the external programs 
 Performed the performance tuning at Mapping, Session, Workflow and Database levels.
 Creating the Technical Specification documents.
 Administrate the migration from the development environment the production environment.
+
+Administrate the ETL server and day end process, including user privilege, ETL arrangement and documentation
+
+Providing post-implementation maintenance and enhancement support to the user of existing project.
 --------------------------------------------------------------------
 Analyzing the dependencies between the jobs and scheduling them accordingly using the Work Scheduler.
 Investigating and fixing the bugs occurred in the production environment and providing the on-call support.
